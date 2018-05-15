@@ -1,0 +1,39 @@
+[data-page="Login"] {
+    color: white;
+    width: 100%;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 77px 0 0 0;
+}
+
+[data-page="Login"] article{
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 120px 10px;
+}
+
+[data-page="Login"] h1{
+    margin: 0 0 40px 0;
+    text-align: center;
+    font-size: 50px;
+}
+
+[data-page="Login"] h2{
+    text-align: center;
+}
+
+[data-page="Login"] p{
+    margin: 0;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    [data-page="Login"] h1{
+        font-size: 100px;
+    }
+    
+    [data-page="Login"] {
+        padding: 43px 0 0 0;
+    }
+}

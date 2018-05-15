@@ -1,0 +1,23 @@
+.Popup {
+    background: rgba(0,0,0,.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 10px;
+    width: calc(100% - 20px);
+    z-index: 1000;
+    text-align: center;
+}
+
+.Popup .Popup-Content {
+    width: 100%;
+}
+
+.Popup .Popup-Header {
+    width: 100%;
+}
+
+.Popup form {
+    width: 100%;
+}

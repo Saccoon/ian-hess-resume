@@ -1,0 +1,9 @@
+.Panel {
+    background: #F19F4D;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+    width: calc(100% - 40px);
+}

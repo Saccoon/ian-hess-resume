@@ -1,0 +1,66 @@
+.Navigation {
+    display: grid;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    grid-template-columns: 100%;
+    grid-template-rows: 40px;
+    background-color: #fff;
+    border-bottom: 3px solid #483e3e;
+    justify-items: center;
+}
+
+.Navigation figure {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+.Navigation img {
+    height: 100%;
+    width: auto;
+}
+
+.Navigation ul {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 5px 0 0 0;
+}
+
+.Navigation li {
+    float: right;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.Navigation .Link a{
+    cursor: pointer;
+    color: #483e3e;
+    text-decoration: none;
+    float: left;
+    padding: 5px 0 0 0;
+}
+
+.Navigation .Link:hover a{
+    text-decoration: none;
+    animation-fill-mode:forwards;
+    animation-name: NavigationColorChange;
+    animation-duration: 1s;
+}
+
+@keyframes NavigationColorChange {
+    from {color: #483e3e;}
+    to {color: black;}
+}
+
+@media only screen and (min-width: 768px) {
+    .Navigation {
+        grid-template-columns: 50% 50%;
+        justify-items: stretch;
+    }
+    .Navigation ul {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}

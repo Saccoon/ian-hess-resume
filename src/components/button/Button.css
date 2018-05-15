@@ -1,0 +1,78 @@
+.Button {
+    padding: 5px 10px;
+    border: none;
+    background: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #483e3e;
+}
+
+.Button.Solid {
+    background: #483e3e;
+    color: white;
+}
+
+.Button:hover {
+    animation-fill-mode:forwards;
+    animation-name: ButtonHover;
+    animation-duration: 1s;
+}
+
+.Button.Solid:hover {
+    animation-fill-mode:forwards;
+    animation-name: ButtonSolidHover;
+    animation-duration: 1s;
+}
+
+.Button a {
+    color: #483e3e;
+    text-decoration: none;
+}
+
+.Button.Solid a{
+    color: white;
+}
+
+@keyframes ButtonHover {
+    from {
+        background: none;
+        color: #483e3e;
+    }
+    to {
+        background: #483e3e;
+        color: white;
+    }
+}
+
+@keyframes ButtonSolidHover {
+    from {
+        background: #483e3e;
+        color: white;
+    }
+    to {
+        color: black;
+    }
+}
+
+.Button:hover a {
+    animation-fill-mode:forwards;
+    animation-name: ButtonLinkHover;
+    animation-duration: 1s;
+}
+
+.Button.Solid:hover a {
+    animation-fill-mode:forwards;
+    animation-name: ButtonSolidLinkHover;
+    animation-duration: 1s;
+}
+
+@keyframes ButtonLinkHover {
+    from {color: #483e3e;}
+    to {color: white;}
+}
+
+@keyframes ButtonSolidLinkHover {
+    from {color: white;}
+    to {color: black;}
+}

@@ -1,0 +1,32 @@
+.Group {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
+}
+
+.Group-Title {
+    width: 100%;
+    cursor: pointer;
+}
+
+.Group-Title:Hover {
+  background-color: #d0d0d0;
+}
+
+.Group .Accordion {
+    margin: 10px 0;
+}
+
+.Group .Panel {
+    margin: 10px 0;
+}
+
+.Group .Group-Expand-Icon {
+  float: right;
+  line-height: 22px;
+}
+
+.Group .Group-Content {
+    width: 100%;
+    border-top: 1px solid #07711b;
+}

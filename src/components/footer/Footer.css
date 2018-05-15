@@ -1,0 +1,49 @@
+.Footer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30px;
+    background-color: #fff;
+    border-top: 3px solid #174d84;
+}
+
+.Footer p {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 10px;
+    margin: 6px 0 0 10px;
+}
+
+.Footer ul {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 3px 0 0 0;
+}
+
+.Footer li {
+    float: right;
+    list-style: none;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px 0 0 0;
+}
+
+.Footer li.Button-Container {
+    padding: 0;
+}
+
+.Footer li a{
+    color: #ff5500;
+    text-decoration: none;
+}
+
+.Footer li:hover a{
+    text-decoration: none;
+    animation-fill-mode:forwards;
+    animation-name: FooterColorChange;
+    animation-duration: 1s;
+}
+
+@keyframes FooterColorChange {
+    from {color: #ff5500;}
+    to {color: #000000;}
+}

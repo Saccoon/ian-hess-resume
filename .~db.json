@@ -1,0 +1,124 @@
+{
+  "devices": [
+    {
+      "ID": "0a0e312e3030313838353031343464611a10a135cb5b95b64487ac41358f24b11a312210e4ef90221bbc43f39dbcd2df47598a96380a",
+      "Name": "Cam 222",
+      "Site": "HRA LOANER",
+      "Description": "",
+      "Connected": false,
+      "Updated": "2018-02-11T16:17:21.987",
+      "Timeout": null,
+      "Archive": null
+    },
+    {
+      "ID": "0a0e312e3030313838353036636664381a10a135cb5b95b64487ac41358f24b11a312210e4ef90221bbc43f39dbcd2df47598a96380a",
+      "Name": "2.0-H3-D2(446424)",
+      "Site": "HRA LOANER",
+      "Description": "",
+      "Connected": false,
+      "Updated": "2018-02-11T16:17:22",
+      "Timeout": null,
+      "Archive": null
+    },
+    {
+      "ID": "0a0e312e3030313838353062326138311a10a135cb5b95b64487ac41358f24b11a312210e4ef90221bbc43f39dbcd2df47598a96380a",
+      "Name": "5.0-H3-B2(731777)",
+      "Site": "HRA LOANER",
+      "Description": "",
+      "Connected": false,
+      "Updated": "2018-02-11T16:17:22.003",
+      "Timeout": null,
+      "Archive": null
+    },
+    {
+      "ID": "0a14312e3030313838353031343464612e63616d30301a10a135cb5b95b64487ac41358f24b11a312210e4ef90221bbc43f39dbcd2df47598a96380a",
+      "Name": "Cam 222",
+      "Site": "HRA LOANER",
+      "Description": "",
+      "Connected": false,
+      "Updated": "2018-02-11T16:17:22.007",
+      "Timeout": null,
+      "Archive": null
+    },
+    {
+      "ID": "0a14312e3030313838353031343464612e646f7430301a10a135cb5b95b64487ac41358f24b11a312210e4ef90221bbc43f39dbcd2df47598a96380a",
+      "Name": "Digital Output 1",
+      "Site": "HRA LOANER",
+      "Description": "",
+      "Connected": false,
+      "Updated": "2018-02-11T16:17:22.01",
+      "Timeout": null,
+      "Archive": null
+    },
+    {
+      "ID": "0a14312e3030313838353031343464612e70747a30301a10a135cb5b95b64487ac41358f24b11a312210e4ef90221bbc43f39dbcd2df47598a96380a",
+      "Name": "(Unnamed Camera)",
+      "Site": "HRA LOANER",
+      "Description": "",
+      "Connected": false,
+      "Updated": "2018-02-11T16:17:22.013",
+      "Timeout": null,
+      "Archive": null
+    },
+    {
+      "ID": "0a14312e3030313838353036636664382e63616d30301a10a135cb5b95b64487ac41358f24b11a312210e4ef90221bbc43f39dbcd2df47598a96380a",
+      "Name": "2.0-H3-D2(446424)",
+      "Site": "HRA LOANER",
+      "Description": "",
+      "Connected": false,
+      "Updated": "2018-02-11T16:17:22.013",
+      "Timeout": null,
+      "Archive": null
+    },
+    {
+      "ID": "0a14312e3030313838353036636664382e646f7430301a10a135cb5b95b64487ac41358f24b11a312210e4ef90221bbc43f39dbcd2df47598a96380a",
+      "Name": "Digital Output Derp",
+      "Site": "HRA LOANER",
+      "Description": "",
+      "Connected": false,
+      "Updated": "2018-02-11T16:17:22.017",
+      "Timeout": null,
+      "Archive": null
+    },
+    {
+      "ID": "0a14312e3030313838353036636664382e70747a30301a10a135cb5b95b64487ac41358f24b11a312210e4ef90221bbc43f39dbcd2df47598a96380a",
+      "Name": "(Unnamed Camera)",
+      "Site": "HRA LOANER",
+      "Description": "",
+      "Connected": false,
+      "Updated": "2018-02-11T16:17:22.02",
+      "Timeout": null,
+      "Archive": null
+    },
+    {
+      "ID": "0a14312e3030313838353062326138312e63616d30301a10a135cb5b95b64487ac41358f24b11a312210e4ef90221bbc43f39dbcd2df47598a96380a",
+      "Name": "5.0-H3-B2(731777)",
+      "Site": "HRA LOANER",
+      "Description": "",
+      "Connected": false,
+      "Updated": "2018-02-11T16:17:22.033",
+      "Timeout": null,
+      "Archive": null
+    },
+    {
+      "ID": "0a14312e3030313838353062326138312e646f7430301a10a135cb5b95b64487ac41358f24b11a312210e4ef90221bbc43f39dbcd2df47598a96380a",
+      "Name": "Digital Output 1",
+      "Site": "HRA LOANER",
+      "Description": "",
+      "Connected": false,
+      "Updated": "2018-02-11T16:17:22.037",
+      "Timeout": null,
+      "Archive": null
+    },
+    {
+      "ID": "0a14312e3030313838353062326138312e70747a30301a10a135cb5b95b64487ac41358f24b11a312210e4ef90221bbc43f39dbcd2df47598a96380a",
+      "Name": "(Unnamed Camera)",
+      "Site": "HRA LOANER",
+      "Description": "",
+      "Connected": false,
+      "Updated": "2018-02-11T16:17:22.04",
+      "Timeout": null,
+      "Archive": null
+    }
+  ]
+}
