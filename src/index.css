@@ -3,3 +3,14 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+
+[data-page]{
+    padding: 77px 10px 0 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+    [data-page] {
+        padding: 43px 10px 0 10px;
+    }
+}

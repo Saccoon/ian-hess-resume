@@ -10,16 +10,10 @@
     justify-items: center;
 }
 
-.Navigation figure {
-    grid-column: 1;
-    grid-row: 1;
-    margin: 5px 10px;
-    cursor: pointer;
-}
-
-.Navigation img {
-    height: 100%;
-    width: auto;
+.Navigation .Title {
+  line-height: 44px;
+  padding-left: 10px;
+  font-size: 25px;
 }
 
 .Navigation ul {

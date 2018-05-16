@@ -1,20 +1,22 @@
 .Group {
     display: flex;
     flex-flow: row wrap;
-    margin: 10px;
+    margin: 10px 0 0 0;
+    box-shadow: 0px 0px 10px -2px black;
+    border-radius: 5px;
 }
 
 .Group-Title {
     width: 100%;
     cursor: pointer;
+    padding: 0 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .Group-Title:Hover {
-  background-color: #d0d0d0;
-}
-
-.Group .Accordion {
-    margin: 10px 0;
+  background-color: black;
+  color: white;
 }
 
 .Group .Panel {
@@ -28,5 +30,6 @@
 
 .Group .Group-Content {
     width: 100%;
-    border-top: 1px solid #07711b;
+    border-top: 1px solid black;
+    padding: 0 10px;
 }

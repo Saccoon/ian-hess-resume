@@ -1,9 +1,0 @@
-[data-page="Dashboard"] {
-    padding: 77px 0 0 0;
-}
-
-@media only screen and (min-width: 768px) {
-    [data-page="Dashboard"] {
-        padding: 43px 0 0 0;
-    }
-}

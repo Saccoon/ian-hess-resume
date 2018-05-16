@@ -1,10 +1,11 @@
 .Accordion {
-    background: #10b12f;
+    background: #0e61a0;
     display: flex;
     flex-flow: row wrap;
     color: white;
-    margin: 10px;
-    width: 100%
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
 }
 
 .Accordion.Accordion-Status {
@@ -18,10 +19,12 @@
     cursor: pointer;
     padding: 0 10px;
     justify-content: space-between;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .Accordion .Accordion-Header:hover {
-    background: #07711b;
+    background: #093f69;
 }
 
 .Accordion.Accordion-Status .Accordion-Header:hover {
@@ -50,7 +53,7 @@
 .Accordion .Accordion-Content {
     padding: 5px 10px;
     width: 100%;
-    border-top: 1px solid #07711b;
+    border-top: 1px solid #093f69;
 }
 
 .Accordion.Accordion-Status .Accordion-Content {
