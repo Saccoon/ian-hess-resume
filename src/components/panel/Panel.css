@@ -1,0 +1,25 @@
+.Panel {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #98878f;
+    text-align: center;
+}
+
+.Panel .Panel-Header {
+    background: #98878f;
+    padding: 0 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    width: 100%;
+    line-height: 40px;
+}
+
+.Panel .Panel-Content {
+    padding: 5px 10px;
+    width: 100%;
+    border-top: 1px solid #985e6d;
+}

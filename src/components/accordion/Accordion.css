@@ -1,5 +1,5 @@
 .Accordion {
-    background: #0e61a0;
+    background: #985e6d;
     display: flex;
     flex-flow: row wrap;
     color: white;
@@ -24,7 +24,7 @@
 }
 
 .Accordion .Accordion-Header:hover {
-    background: #093f69;
+    background: #673f49;
 }
 
 .Accordion.Accordion-Status .Accordion-Header:hover {
@@ -53,7 +53,7 @@
 .Accordion .Accordion-Content {
     padding: 5px 10px;
     width: 100%;
-    border-top: 1px solid #093f69;
+    border-top: 1px solid #673f49;
 }
 
 .Accordion.Accordion-Status .Accordion-Content {

@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: row wrap;
     margin: 10px 0 0 0;
-    box-shadow: 0px 0px 10px -2px black;
+    box-shadow: 0px 0px 10px -2px #985e6d;
     border-radius: 5px;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .Group-Title:Hover {
-  background-color: black;
+  background-color: #985e6d;
   color: white;
 }
 
@@ -30,6 +30,6 @@
 
 .Group .Group-Content {
     width: 100%;
-    border-top: 1px solid black;
+    border-top: 1px solid #985e6d;
     padding: 0 10px;
 }

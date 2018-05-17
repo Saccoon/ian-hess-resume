@@ -4,17 +4,21 @@ import * as Experience from '../constants/experience';
 import * as Education from '../constants/education';
 import Group from '../components/group/Group';
 import Accordion from '../components/accordion/Accordion';
+import Panel from '../components/panel/Panel';
+import ProfilePicture from '../components/profilePicture/ProfilePicture'
+import ProfileImage from './ian.jpeg'
 
 class ProfilePage extends Component {
 
   render() {
     return (
       <div data-page="Profile">
+        <ProfilePicture source={ProfileImage} />
         <h1>About Me</h1>
         <p>
-          My name is Ian Hess, I am a technology leader and developer in the Minneapolis, MN area.
-          With the use of technology I assess problems or roadblocks companies face and overcome them.
-          Specializing in web technologies and web infrastructure I build and lead teams or individuals
+          My name is Ian Hess, I am a technology leader and developer in the Minneapolis, MN area.<br />
+          With the use of technology I assess problems or roadblocks companies face and overcome them.<br />
+          Specializing in web technologies and web infrastructure, I build and lead teams or individuals
           down the necessary path to turn their current technology issues into income generating and efficient
           systems.
         </p>
@@ -30,20 +34,19 @@ class ProfilePage extends Component {
           <li>Passionate about projects</li>
         </ul>
         <Group title="Skills">
-        {Object.values(Skills).map((category, i) =>{
-          return (
-            <div key={category + i}>
-              <h3>{category.name}</h3>
-              {Object.values(category.skills).map((skill, j) =>{
+          {Object.values(Skills).map((category, i) =>{
+            return (
+              <Panel title={category.name} key={category + i}>
+                {Object.values(category.skills).map((skill, j) =>{
                   return (
-                      <p key={skill + j}>
-                          {skill}
-                      </p>
+                    <p key={skill + j}>
+                        {skill}
+                    </p>
                   )
-              })}
-            </div>
-          )
-        })}
+                })}
+              </Panel>
+            )
+          })}
         </Group>
 
         <Group title="Experience">
@@ -59,15 +62,14 @@ class ProfilePage extends Component {
 
         <Group title="Education">
         {Object.values(Education).map((chapter, i) =>{
-          return (
-            <div key={chapter + i}>
-              <h3>{chapter.name}</h3>
-              <h4>{chapter.school}</h4>
-              <h5>{chapter.study}</h5>
-              <p>{chapter.gpa}</p>
-              <p>{chapter.years}</p>
-            </div>
-          )
+            return (
+              <Panel title={chapter.name} key={chapter + i}>
+                <h4>{chapter.school}</h4>
+                <h5>{chapter.study}</h5>
+                <p>{chapter.gpa}</p>
+                <p>{chapter.years}</p>
+              </Panel>
+            )
         })}
         </Group>
 

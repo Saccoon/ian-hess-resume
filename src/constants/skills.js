@@ -10,14 +10,15 @@ export const LANGUAGES = {
 }
 
 export const FRAMEWORKS = {
-  name: 'Frameworks',
+  name: 'Frameworks/Libraries',
   skills: [
     'React/Redux',
     'Vue',
     'Angular 1 & 2',
     'Riot',
     'Backbone/Marionette',
-    'Laravel'
+    'Laravel',
+    'jQuery'
   ]
 }
 
@@ -38,7 +39,7 @@ export const TECHNOLOGIES = {
     'Circle CI',
     'Active Directory',
     'Photoshop',
-    'Webstorm/PhpStorm/ATOM/VS Code',
+    'Webstorm/Atom/VS Code',
     'Cloud 9',
     'Amazon AWS'
   ]
