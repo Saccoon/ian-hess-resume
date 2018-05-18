@@ -11,6 +11,7 @@ a {
 
 [data-page]{
     padding: 20px;
+    border-radius: 5px;
     max-width: 1024px;
     margin: 0 auto;
     margin-top: 20px;
@@ -25,6 +26,13 @@ a {
 }
 
 @media only screen and (min-width: 1200px) {
+}
+
+@media print
+{
+    div{
+        page-break-inside: avoid;
+    }
 }
 
 /* colors

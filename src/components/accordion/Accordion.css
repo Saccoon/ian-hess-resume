@@ -8,6 +8,10 @@
     border-radius: 5px;
 }
 
+.Accordion a {
+    color: #192231;
+}
+
 .Accordion.Accordion-Status {
     background: #f14d4d;
 }

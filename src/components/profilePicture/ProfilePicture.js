@@ -14,7 +14,7 @@ class ProfilePicture extends Component {
     const {source} = this.props
 
     return (
-      <figure class="ProfilePicture">
+      <figure className="ProfilePicture">
         <img alt="Circular-Profile" src={source} />
       </figure>
     );
