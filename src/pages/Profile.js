@@ -60,7 +60,7 @@ class ProfilePage extends Component {
               {Object.values(job.urls).map((url, j) =>{
                 return (
                   <p key={url + j}>
-                    <a href={url}>{url}</a>
+                    <a target='_blank' href={url}>{url}</a>
                   </p>
                 )
               })}
@@ -128,7 +128,7 @@ class ProfilePage extends Component {
                 {Object.values(job.urls).map((url, j) =>{
                   return (
                     <p key={url + j}>
-                      <a href={url}>{url}</a>
+                      <a target='_blank' href={url}>{url}</a>
                     </p>
                   )
                 })}
