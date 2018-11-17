@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Group.css'
-import {string, node, bool} from 'prop-types'
+import {string, node} from 'prop-types'
 
 class Group extends Component {
 
@@ -8,28 +8,7 @@ class Group extends Component {
     /** The title to pass into the panel tag */
     title: string.isRequired,
     /** The nodes to pass into the panel tag */
-    children: node.isRequired,
-    /** The current open or closed state of the Accordion */
-    collapsed: bool
-  }
-
-  static defaultProps = {
-    collapsed: true
-  }
-
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      collapsed: props.collapsed
-    }
-  }
-
-  handleClick = e => {
-    e.preventDefault()
-    this.setState(prevState => ({
-      collapsed: !prevState.collapsed
-    }))
+    children: node.isRequired
   }
 
   render() {
@@ -38,22 +17,14 @@ class Group extends Component {
 
     return (
       <section className="Group">
-          <header className="Group-Title" onClick={this.handleClick}>
+          <header className="Group-Title">
             <h2>
               {title}
-              {!this.state.collapsed && (
-                <div className="Group-Expand-Icon">-</div>
-              )}
-              {this.state.collapsed && (
-                <div className="Group-Expand-Icon">+</div>
-              )}
             </h2>
           </header>
-          {!this.state.collapsed && (
-            <article className="Group-Content">
-              {children}
-            </article>
-          )}
+          <article className="Group-Content">
+            {children}
+          </article>
       </section>
     )
   }

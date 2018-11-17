@@ -1,15 +1,13 @@
 export const COLLEGE = {
-  name: 'College Education',
-  school: 'Brown College',
-  study: 'Bachelors in Computer Science',
-  gpa: '3.91',
-  years: '2009-2012'
-}
-
-export const HIGHSCHOOL = {
-  name: 'Highschool Education',
-  school: 'Bemidji Senior High School',
-  study: 'Diploma',
-  gpa: '3.89',
-  years: '2006-2009'
+  school: 'Bethel University, St. Paul',
+  study: 'Bachelors of Science in Nursing',
+  gpa: '3.87',
+  years: 'August 2016 - May 2020',
+  notes: [
+    'Dean\'s List 2016-2018',
+    'Recipient of Lynn Hummell Nursing Memorial Scholarship, Royal Merit Scholarship, ' +
+    'Music performance Scholarship, along with various other scholarships and grants.',
+    'Member of Bethel Student Nursing Association',
+    'Member of Bethel Wind Symphony and Bethel Jazz Orchestra'
+  ]
 }

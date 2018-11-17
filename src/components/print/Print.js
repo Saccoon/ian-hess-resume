@@ -41,7 +41,6 @@ class Print extends Component {
         })
       )
     }
-    //
   }
 
   render() {

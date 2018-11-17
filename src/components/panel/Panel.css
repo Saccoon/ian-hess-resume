@@ -1,25 +1,28 @@
 .Panel {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 10px 0;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #98878f;
-    text-align: center;
+    padding: 20px;
 }
 
-.Panel .Panel-Header {
-    background: #98878f;
-    padding: 0 10px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    color: white;
-    width: 100%;
-    line-height: 40px;
+.Panel:nth-child(even) {
+    background: #eaeaea;
 }
 
-.Panel .Panel-Content {
-    padding: 5px 10px;
+.Panel-Header {
     width: 100%;
-    border-top: 1px solid #985e6d;
+    font-size: 18pt;
+}
+
+@media print {
+    .Panel {
+        padding: 5px;
+    }
+    
+    .Panel:nth-child(even) {
+        background: #eaeaea;
+    }
+    
+    .Panel-Header {
+        width: 100%;
+        font-size: 15pt;
+        padding-top: 5px;
+    }
 }

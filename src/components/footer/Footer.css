@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 30px;
-    background-color: #192231;
+    background-color: #006288;
     border-top: 3px solid black;
     margin-top: 20px;
     text-align: center;
@@ -21,4 +21,26 @@
 @keyframes FooterColorChange {
     from {color: #ff5500;}
     to {color: #000000;}
+}
+
+@media print {
+    .Footer {
+        grid-template-columns: 25%;
+    }
+    .Footer p {
+        grid-column: none;
+    }
+    .Footer p, .Footer a {
+        color: black;
+    }
+    .NoPrint {
+        display: none;
+    }
+    .PrintSpace {
+        padding: 0 0 20px 0;
+        margin-bottom: 5px;
+    }
+    .NoMarginPrint {
+        margin: 0;
+    }
 }
