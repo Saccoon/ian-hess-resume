@@ -7,7 +7,7 @@ export const COLLEGE = {
     'Dean\'s List 2016-2018',
     'Recipient of Lynn Hummell Nursing Memorial Scholarship, Royal Merit Scholarship, ' +
     'Music performance Scholarship, along with various other scholarships and grants.',
-    'Member of Bethel Student Nursing Association',
+    'Member of Bethel Student Nurses Association',
     'Member of Bethel Wind Symphony and Bethel Jazz Orchestra'
   ]
 }

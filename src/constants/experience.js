@@ -4,7 +4,7 @@ export const SANFORD = {
 	location: 'Bemidji, MN',
 	years: 'May 2017 - Sep 2017',
 	notes: [
-    'Facilitated Activities of daily living, including personal hygiene management, feeding and ambulation.',
+    'Facilitated activities of daily living, including personal hygiene management, feeding and ambulation.',
     'Determined and promoted patient needs and developed care plans accordingly.',
     'Reported any unusual circumstances in the patients\' condition or environment.',
     'Monitored vital signs, such as blood pressure, pulse, and fluid outputs.'

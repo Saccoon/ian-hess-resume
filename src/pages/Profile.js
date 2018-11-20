@@ -20,7 +20,7 @@ class ProfilePage extends Component {
         <h1>Mackenzey Thunem</h1>
         <p>
           Dependable and compassionate student nurse seeking to gain hands-on experience in 
-          direct patient care as a summer intern ideally ona  surgical or critical care floor.  Skilled in 
+          direct patient care as a summer intern ideally on a  surgical or critical care floor.  Skilled in 
           patient-centered care, performing physical and functional assessments, assisting with care 
           planning, balancing the art and science of nursing, and educating patients.  On track to 
           graduate with a Bachelor of Science in nursing in the year 2020.
