@@ -2,13 +2,30 @@
     padding: 20px;
 }
 
+.Small .Panel {
+    padding: 10px 20px;
+}
+
+.Small .Panel-Header {
+    font-size: 12pt;
+}
+
 .Panel:nth-child(even) {
     background: #eaeaea;
 }
 
 .Panel-Header {
     width: 100%;
-    font-size: 18pt;
+    font-size: 16pt;
+    font-weight: 700;
+}
+
+.Small p {
+    margin: 5px 0 0 0;
+}
+
+.Small ul {
+    margin: 10px 0 0 0;
 }
 
 @media print {

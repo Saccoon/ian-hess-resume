@@ -3,6 +3,7 @@ import {SKILLS} from '../constants/skills'
 import * as Clinical from '../constants/clinical'
 import * as Experience from '../constants/experience'
 import * as Education from '../constants/education'
+import * as Community from '../constants/community'
 import * as Volunteer from '../constants/volunteer'
 import Group from '../components/group/Group'
 import Panel from '../components/panel/Panel'
@@ -64,25 +65,46 @@ class ProfilePage extends Component {
               )
             })}
             </Group>
-            <Group title="Volunteer Activities">
-            {Object.values(Volunteer).map((job, i) =>{
-              return (
-                <Panel title={job.name} key={job + i}>
-                  <p>
-                    {job.location}<br />
-                    <span className="Bold">{job.years}</span>
-                  </p>
-                  <ul>
-                  {job.notes && Object.values(job.notes).map((note, j) =>
-                    <li key={note + j}>
-                      {note}
-                    </li>
-                  )}
-                  </ul>
-                </Panel>
-              )
-            })}
-            </Group>
+            <div className="Small">
+              <Group title="Community Activities">
+              {Object.values(Community).map((job, i) =>{
+                return (
+                  <Panel title={job.name} key={job + i}>
+                    <p>
+                      {job.location}<br />
+                      <span className="Bold">{job.years}</span>
+                    </p>
+                    <ul>
+                    {job.notes && Object.values(job.notes).map((note, j) =>
+                      <li key={note + j}>
+                        {note}
+                      </li>
+                    )}
+                    </ul>
+                  </Panel>
+                )
+              })}
+              </Group>
+              <Group title="Volunteer Activities">
+              {Object.values(Volunteer).map((job, i) =>{
+                return (
+                  <Panel title={job.name} key={job + i}>
+                    <p>
+                      {job.location}<br />
+                      <span className="Bold">{job.years}</span>
+                    </p>
+                    <ul>
+                    {job.notes && Object.values(job.notes).map((note, j) =>
+                      <li key={note + j}>
+                        {note}
+                      </li>
+                    )}
+                    </ul>
+                  </Panel>
+                )
+              })}
+              </Group>
+            </div>
             <DownloadButton />
           </section>
           <aside>
