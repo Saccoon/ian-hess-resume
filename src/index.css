@@ -32,6 +32,18 @@ ul {
     float: left;
 }
 
+.Padding {
+    padding-top: 10px;
+}
+
+.Padding h3 {
+    margin-bottom: 0;
+}
+
+.Padding p {
+    margin-top: 10px;
+}
+
 body {
   margin: 0;
   padding: 0;

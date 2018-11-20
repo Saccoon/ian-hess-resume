@@ -1,12 +1,14 @@
 import React, {Component, Fragment} from 'react'
 import {SKILLS} from '../constants/skills'
+import * as Clinical from '../constants/clinical'
 import * as Experience from '../constants/experience'
 import * as Education from '../constants/education'
+import * as Volunteer from '../constants/volunteer'
 import Group from '../components/group/Group'
 import Panel from '../components/panel/Panel'
 import ProfilePicture from '../components/profilePicture/ProfilePicture'
 import ProfileImage from './MackNCheese.jpg'
-import PrintButton from '../components/print/PrintButton'
+import DownloadButton from '../components/download/Download'
 
 class ProfilePage extends Component {
 
@@ -24,6 +26,25 @@ class ProfilePage extends Component {
         </p>
         <div className="ProfileContainer">
           <section>
+            <Group title="Clinical Experience">
+            {Object.values(Clinical).map((experience, i) =>{
+              return (
+                <Panel title={experience.name + ' - ' + experience.title} key={experience + i}>
+                  <p>
+                    {experience.location}<br />
+                    <span className="Bold">{experience.years}</span>
+                  </p>
+                  <ul>
+                  {Object.values(experience.notes).map((note, j) =>
+                    <li key={note + j}>
+                      {note}
+                    </li>
+                  )}
+                  </ul>
+                </Panel>
+              )
+            })}
+            </Group>
             <Group title="Employment History">
             {Object.values(Experience).map((job, i) =>{
               return (
@@ -43,7 +64,26 @@ class ProfilePage extends Component {
               )
             })}
             </Group>
-            <PrintButton />
+            <Group title="Volunteer Activities">
+            {Object.values(Volunteer).map((job, i) =>{
+              return (
+                <Panel title={job.name} key={job + i}>
+                  <p>
+                    {job.location}<br />
+                    <span className="Bold">{job.years}</span>
+                  </p>
+                  <ul>
+                  {job.notes && Object.values(job.notes).map((note, j) =>
+                    <li key={note + j}>
+                      {note}
+                    </li>
+                  )}
+                  </ul>
+                </Panel>
+              )
+            })}
+            </Group>
+            <DownloadButton />
           </section>
           <aside>
             <Group title="Skills">
@@ -76,6 +116,25 @@ class ProfilePage extends Component {
                   </ul>
                 </Fragment>
               )}
+              </Group>
+            </span>
+            <span className="Padding-Top">
+              <Group title="Contact">
+                <div className="Padding">
+                  <h3>Phone</h3>
+                  <a href="tel:218-766-9421" target='_top'><p>(218)766-9421</p></a>
+                </div>
+                <div className="Padding">
+                  <h3>Email</h3>
+                  <a href="mailto:mackythunem@gmail.com" target="_top"><p>mackythunem@gmail.com</p></a>
+                </div>
+                <div className="Padding">
+                  <h3>Address</h3>
+                  <p>
+                    2551 38th Ave NE #118, <br />
+                    St Anthony MN, 55421
+                  </p>
+                </div>
               </Group>
             </span>
           </aside>

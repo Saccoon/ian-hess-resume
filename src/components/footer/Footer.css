@@ -5,17 +5,9 @@
     background-color: #006288;
     border-top: 3px solid black;
     margin-top: 20px;
+    padding-bottom: 10px;
     text-align: center;
     color: white;
-}
-
-@media only screen and (min-width: 768px) {
-  .Footer {
-      grid-template-columns: 50%;
-  }
-  .Footer p {
-      grid-column: 1/3;
-  }
 }
 
 @keyframes FooterColorChange {
