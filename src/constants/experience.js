@@ -60,16 +60,6 @@ export const AMANO = {
   ]
 }
 
-export const GOGOPHER = {
-  name: 'Go Gopher Dinkytown Rentals (Contract)',
-  title: 'Web Architect',
-  location: 'Minneapolis, MN',
-  years: 'June 2017 - August',
-  urls: [
-    'https://www.gogopherdinkytown.com/'
-  ]
-}
-
 export const GOMAHI = {
   name: 'Go Mahi (Contract)',
   title: 'Web Architect',
@@ -81,7 +71,7 @@ export const GOMAHI = {
 }
 
 export const BCBSNC = {
-  name: 'Blue Cross Blue Shield North Carolina',
+  name: 'Blue Cross Blue Shield NC',
   title: 'Senior Web Developer',
   location: 'Durham, NC',
   years: 'June 2016 - August 2017',
@@ -98,16 +88,6 @@ export const CYBERPOWER = {
   urls: [
     'https://www.cyberpowersystems.com/',
     'https://github.com/cyber-power/cyber-power'
-  ]
-}
-
-export const OGBANKS = {
-  name: 'Original Banks (Contract)',
-  title: 'Web Architect',
-  location: 'Minneapolis, MN',
-  years: 'July 2016 - Now',
-  urls: [
-    'https://www.ogbanks.com/'
   ]
 }
 
