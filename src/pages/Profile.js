@@ -27,13 +27,13 @@ class ProfilePage extends Component {
 			border-bottom: 2px solid ${props => props.border ? Colors[props.border] : Colors.DarkYellow };
 			color: ${props => props.color ? Colors[props.color] : Colors.DarkGray };
 		`
-		const Flex = styled.div`
+		const FlexList = styled.div`
 			display: flex;
 			justify-content: space-evenly;
 		`
 		const FlexItem = styled.div`
 			background: ${props => props.background ? Colors[props.background] : Colors.DarkYellow };
-			flex-grow: 1;
+			flex-grow: ${props => props.grow ? props.grow : 1 };
 			margin-right: 20px;
 			&:last-child{
 				margin: 0;
@@ -95,7 +95,7 @@ class ProfilePage extends Component {
 				<Section>
 					<Container>
 						<SectionTitle>Skills</SectionTitle>
-						<Flex>
+						<FlexList>
 							<FlexItem>
 								<ItemTitle>Languages</ItemTitle>
 								{LANGUAGES.map((data, key) => <ItemText key={key}>{data}</ItemText>)}
@@ -112,7 +112,7 @@ class ProfilePage extends Component {
 								<ItemTitle>Technologies</ItemTitle>
 								{TECHNOLOGIES.map((data, key) => <ItemText key={key}>{data}</ItemText>)}
 							</FlexItem>
-						</Flex>
+						</FlexList>
 					</Container>
 				</Section>
 				<Section background="DarkGray">
@@ -136,10 +136,10 @@ class ProfilePage extends Component {
 						<GridList>
 							{Object.values(EDUCATION).map((data, key) => <GridItem key={key}>
 								<ItemTitle align="left">{data.name}</ItemTitle>
-								<ItemText>{data.school}</ItemText>
-								<ItemText>{data.study}</ItemText>
-								<ItemText>{data.gpa}</ItemText>
-								<ItemText>{data.years}</ItemText>
+								<ItemText align="left">{data.school}</ItemText>
+								<ItemText align="left">{data.study}</ItemText>
+								<ItemText align="left">{data.gpa}</ItemText>
+								<ItemText align="left">{data.years}</ItemText>
 							</GridItem>)}
 						</GridList>
 					</Container>
