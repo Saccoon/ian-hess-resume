@@ -47,8 +47,15 @@ class ProfilePage extends Component {
 			color: ${props => props.color ? Colors[props.color] : Colors.DarkYellow };
 			text-align: ${props => props.align ? props.align : "center" };
 		`
+		const ItemSubTitle = styled.h3`
+			padding: 0 20px;
+		`
 		const ItemText = styled.p`
-			text-align: center;
+			text-align: ${props => props.align ? props.align : "center" };
+			padding: 0 20px;
+			a {
+				color: ${Colors.DarkYellow};
+			}
 		`
 		const GridList = styled.div`
 			display: grid;
@@ -114,11 +121,11 @@ class ProfilePage extends Component {
 						<GridList grid="calc(50% - 10px) calc(50% - 10px)">
 							{Object.values(EXPERIENCE).map((data, key) => <GridItem background="White" key={key}>
 								<ItemTitle background="DarkYellow" color="DarkGray">{data.name}</ItemTitle>
-								<p>{data.title}</p>
-								<p>{data.location}</p>
-								<p>{data.years}</p>
-								<h3>Completed Work</h3>
-								{data.urls.map((data, key) => <p key={key}>{data}</p>)}
+								<ItemText align="left">{data.title}</ItemText>
+								<ItemText align="left">{data.location}</ItemText>
+								<ItemText align="left">{data.years}</ItemText>
+								<ItemSubTitle>Completed Work</ItemSubTitle>
+								{data.urls.map((data, key) => <ItemText align="left" key={key}><a href={data} target="_blank">{data}</a></ItemText>)}
 							</GridItem>)}
 						</GridList>
 					</Container>
@@ -129,10 +136,10 @@ class ProfilePage extends Component {
 						<GridList>
 							{Object.values(EDUCATION).map((data, key) => <GridItem key={key}>
 								<ItemTitle align="left">{data.name}</ItemTitle>
-								<p>{data.school}</p>
-								<p>{data.study}</p>
-								<p>{data.gpa}</p>
-								<p>{data.years}</p>
+								<ItemText>{data.school}</ItemText>
+								<ItemText>{data.study}</ItemText>
+								<ItemText>{data.gpa}</ItemText>
+								<ItemText>{data.years}</ItemText>
 							</GridItem>)}
 						</GridList>
 					</Container>
