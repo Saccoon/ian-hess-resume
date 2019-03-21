@@ -31,11 +31,13 @@ export const SectionTitle = styled.h1`
 export const FlexList = styled.div`
 	display: flex;
 	justify-content: space-evenly;
+	position: relative;
 `
 export const FlexItem = styled.div`
 	background: ${props => props.background ? Colors[props.background] : Colors.DarkYellow };
 	flex-grow: ${props => props.grow ? props.grow : 1 };
 	margin-right: 20px;
+	position: relative;
 	&:last-child{
 		margin: 0;
 	}
@@ -88,6 +90,7 @@ export const GridList = styled.div`
 	display: grid;
 	grid-template-columns: ${props => props.grid ? props.grid : '100%' };
 	grid-gap: 20px;
+	position: relative;
 	@media print {
 		grid-template-columns: calc(50% - 5px) calc(50% - 10px);
 		grid-gap: 10px;
@@ -95,6 +98,7 @@ export const GridList = styled.div`
 `
 export const GridItem = styled.div`
 	background: ${props => props.background ? Colors[props.background] : Colors.DarkYellow };
+	position: relative;
 `
 export const Title = styled.h1`
 	color: ${Colors.LightGray};
