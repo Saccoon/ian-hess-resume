@@ -4,10 +4,3 @@ body {
   font-family: sans-serif;
   background-color: white;
 }
-
-@media print
-{
-    div{
-        page-break-inside: avoid;
-    }
-}
