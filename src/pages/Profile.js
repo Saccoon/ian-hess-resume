@@ -43,9 +43,9 @@ class ProfilePage extends Component {
 			font-size: 30px;
 			margin: 0;
 			padding: 20px;
-			background: #404040;
-			color: #f3be4f;
-			text-align: center;
+			background: ${props => props.background ? Colors[props.background] : Colors.DarkGray };
+			color: ${props => props.color ? Colors[props.color] : Colors.DarkYellow };
+			text-align: ${props => props.align ? props.align : "center" };
 		`
 		const ItemText = styled.p`
 			text-align: center;
@@ -112,8 +112,8 @@ class ProfilePage extends Component {
 					<Container>
 						<SectionTitle color="LightGray">Experience</SectionTitle>
 						<GridList grid="calc(50% - 10px) calc(50% - 10px)">
-							{Object.values(EXPERIENCE).map((data, key) => <GridItem key={key}>
-								<h2>{data.name}</h2>
+							{Object.values(EXPERIENCE).map((data, key) => <GridItem background="White" key={key}>
+								<ItemTitle background="DarkYellow" color="DarkGray">{data.name}</ItemTitle>
 								<p>{data.title}</p>
 								<p>{data.location}</p>
 								<p>{data.years}</p>
@@ -128,7 +128,7 @@ class ProfilePage extends Component {
 						<SectionTitle>Education</SectionTitle>
 						<GridList>
 							{Object.values(EDUCATION).map((data, key) => <GridItem key={key}>
-								<h2>{data.name}</h2>
+								<ItemTitle align="left">{data.name}</ItemTitle>
 								<p>{data.school}</p>
 								<p>{data.study}</p>
 								<p>{data.gpa}</p>

@@ -71,7 +71,7 @@ export const GOMAHI = {
 }
 
 export const BCBSNC = {
-  name: 'Blue Cross Blue Shield North Carolina',
+  name: 'Blue Cross Blue Shield NC',
   title: 'Senior Web Developer',
   location: 'Durham, NC',
   years: 'June 2016 - August 2017',
