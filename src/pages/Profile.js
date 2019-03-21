@@ -1,95 +1,57 @@
 import React, {Component} from 'react'
-import styled from 'styled-components'
 
+import { ProfileContainer,
+	Section,
+	SectionTitle,
+	FlexList,
+	FlexItem,
+	ItemTitle,
+	ItemSubTitle,
+	ItemText,
+	GridList,
+	GridItem,
+	Title,
+	SummaryText,
+	ProfilePicture,
+	SummaryItem,
+	Summary,
+	SummaryContent } from './Styles'
 import Container from '../components/container/Container'
 import { LANGUAGES, FRAMEWORKS, DATABASES, TECHNOLOGIES } from '../constants/skills'
 import * as EXPERIENCE from '../constants/experience'
 import * as EDUCATION from '../constants/education'
-import * as Colors from '../constants/colors'
+
 import ProfileImage from './FullSizeR.png'
 
 class ProfilePage extends Component {
-
 	render() {
-		const ProfileContainer = styled.main`
-			padding-bottom: 20px;
-		`
-		const Section = styled.article`
-			background: ${props => props.background ? Colors[props.background] : Colors.White };
-			padding: 40px;
-		`
-		const SectionTitle = styled.h1`
-			text-align: center;
-			font-size: 40px;
-			width: 300px;
-			margin: 0 auto;
-			margin-bottom: 40px;
-			border-bottom: 2px solid ${props => props.border ? Colors[props.border] : Colors.DarkYellow };
-			color: ${props => props.color ? Colors[props.color] : Colors.DarkGray };
-		`
-		const FlexList = styled.div`
-			display: flex;
-			justify-content: space-evenly;
-		`
-		const FlexItem = styled.div`
-			background: ${props => props.background ? Colors[props.background] : Colors.DarkYellow };
-			flex-grow: ${props => props.grow ? props.grow : 1 };
-			margin-right: 20px;
-			&:last-child{
-				margin: 0;
-			}
-		`
-		const ItemTitle = styled.h2`
-			font-size: 30px;
-			margin: 0;
-			padding: 20px;
-			background: ${props => props.background ? Colors[props.background] : Colors.DarkGray };
-			color: ${props => props.color ? Colors[props.color] : Colors.DarkYellow };
-			text-align: ${props => props.align ? props.align : "center" };
-		`
-		const ItemSubTitle = styled.h3`
-			padding: 0 20px;
-		`
-		const ItemText = styled.p`
-			text-align: ${props => props.align ? props.align : "center" };
-			padding: 0 20px;
-			a {
-				color: ${Colors.DarkYellow};
-			}
-		`
-		const GridList = styled.div`
-			display: grid;
-			grid-template-columns: ${props => props.grid ? props.grid : '100%' };
-			grid-gap: 20px;
-		`
-		const GridItem = styled.div`
-			background: ${props => props.background ? Colors[props.background] : Colors.DarkYellow };
-		`
-		
 		return (
 			<ProfileContainer>
-				{/* <ProfilePicture source={ProfileImage} /> */}
 				<Section background="DarkGray">
 					<Container>
-						<h1>About Me, Ian Hess</h1>
-						<p>
-							My name is Ian Hess, I am a technology leader and developer in the Minneapolis, MN area.<br />
-							With the use of technology I assess problems or roadblocks companies face and overcome them.<br />
-							Specializing in web technologies and web infrastructure, I build and lead teams or individuals
-							down the necessary path to turn their current technology issues into income generating and efficient
-							systems.
-						</p>
-						<p>
-							Fulltime I am a department Lead for the Ameriprise Financial Web Team, and outside of work I
-							have worked with many businesses and startups to help them realize their technology dreams.
-						</p>
-						<ul>
-							<li>Objective Focused</li>
-							<li>Collaborative</li>
-							<li>Open to Discussion</li>
-							<li>Focused on bridging gaps between teams/technology</li>
-							<li>Passionate about projects</li>
-						</ul>
+						<Summary>
+							<SummaryContent>
+								<Title>About Me, Ian Hess</Title>
+								<SummaryText>
+									My name is Ian Hess, I am a technology leader and developer in the Minneapolis, MN area.<br />
+									With the use of technology I assess problems or roadblocks companies face and overcome them.<br />
+									Specializing in web technologies and web infrastructure, I build and lead teams or individuals
+									down the necessary path to turn their current technology issues into income generating and efficient
+									systems.
+								</SummaryText>
+								<SummaryText>
+									Fulltime I am a Web Architect for Trane Inc, and outside of work I
+									have worked with many businesses and startups to help them realize their technology dreams.
+								</SummaryText>
+								<SummaryItem>
+									Objective Focused, Collaborative, Open to Discussion, 
+									Focused on bridging gaps between teams/technology, Passionate about projects
+								</SummaryItem>
+							</SummaryContent>
+							<ProfilePicture>
+								<img src={ProfileImage} />
+							</ProfilePicture>
+						</Summary>
 					</Container>
 				</Section>
 				<Section>
