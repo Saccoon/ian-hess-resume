@@ -1,23 +1,22 @@
-import React from 'react';
+import React, { Fragment } from 'react'
 import {
   BrowserRouter as Router,
   Route,
-} from 'react-router-dom';
+} from 'react-router-dom'
 
 //components
-import Footer from '../components/footer/Footer';
+import Footer from '../components/footer/Footer'
 
 //pages
-import Index from '../pages/Profile';
-
-import * as routes from '../constants/routes';
+import Index from '../pages/Profile'
+import * as routes from '../constants/routes'
 
 const App = () =>
   <Router>
-    <div>
+    <Fragment>
       <Route exact path={routes.INDEX} component={() => <Index />} />
       <Footer />
-    </div>
+    </Fragment>
   </Router>
 
-export default App;
+export default App
