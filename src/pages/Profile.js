@@ -87,7 +87,7 @@ class ProfilePage extends Component {
 								<ItemText align="left">{data.location}</ItemText>
 								<ItemText align="left">{data.years}</ItemText>
 								<ItemSubTitle>Completed Work</ItemSubTitle>
-								{data.urls.map((data, key) => <ItemText align="left" key={key}><a href={data} target="_blank">{data}</a></ItemText>)}
+								{data.urls.map((data, key) => <ItemText noPrint={true} align="left" key={key}><a href={data} target="_blank">{data}</a></ItemText>)}
 							</GridItem>)}
 						</GridList>
 					</Container>

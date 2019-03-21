@@ -63,8 +63,7 @@ export const ItemTitle = styled.h2`
 export const ItemSubTitle = styled.h3`
 	padding: 0 20px;
 	@media print {
-		font-size: 14px;
-		padding: 0 10px;
+		display: none;
 	}
 `
 export const ItemText = styled.p`
@@ -84,6 +83,7 @@ export const ItemText = styled.p`
 		a {
 			font-size: 12px;
 		}
+		${props => props.noPrint && "display: none;"}
 	}
 `
 export const GridList = styled.div`
@@ -124,11 +124,7 @@ export const ProfilePicture = styled.figure`
 		border: 2px solid ${Colors.DarkYellow};
 	}
 	@media print {
-		img {
-			height: 150px;
-			width: 150px;
-			border-radius: 75px;
-		}
+		display: none;
 	}
 `
 export const SummaryItem = styled.p`
