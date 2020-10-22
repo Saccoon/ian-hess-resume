@@ -1,15 +1,16 @@
 export const LANGUAGES = [
     'Javascript',
-    'Node',
+    'NodeJS/GraphQL',
     'PHP',
     'HTML',
     'CSS'
 ]
 
 export const FRAMEWORKS = [
+    'React Native',
     'React/Redux',
     'Vue',
-    'Angular 1 & 2',
+    'Angular 1 & 2X',
     'Riot',
     'Backbone/Marionette',
     'jQuery'

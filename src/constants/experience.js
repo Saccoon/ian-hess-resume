@@ -1,12 +1,22 @@
+export const MEDTRONIC = {
+	name: 'Medtronic',
+	title: 'Web Architect',
+	location: 'New Brighton, MN',
+	years: 'May 2020 - Now',
+	urls: [
+	  'https://www.medtronic.com/us-en/index.html'
+	]
+}
+
 export const TRANE = {
 	name: 'Trane',
 	title: 'Web Architect',
 	location: 'White Bear Lake, MN',
-	years: 'July 2018 - Now',
+	years: 'July 2018 - May 2020',
 	urls: [
-	  'In Progress...'
+	  'https://www.trane.com/index.html'
 	]
-  }
+}
 
 export const AMERIPRISE = {
   name: 'Ameriprise Financial (Contract)',
