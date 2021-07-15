@@ -1,8 +1,28 @@
+export const SHIPT = {
+	name: 'Shipt (Contract)',
+	title: 'Principle Developer',
+	location: 'Birmingham, AL',
+	years: 'May 2021 - Now(Ends end of July)',
+	urls: [
+	  'https://www.shipt.com/'
+	]
+}
+
+export const JOSTENS = {
+	name: 'Jostens (Contract)',
+	title: 'Web Architect',
+	location: 'Maple Grove, MN',
+	years: 'October 2020 - June 2021',
+	urls: [
+	  'https://www.jostens.com/'
+	]
+}
+
 export const MEDTRONIC = {
 	name: 'Medtronic',
 	title: 'Web Architect',
 	location: 'New Brighton, MN',
-	years: 'May 2020 - Now',
+	years: 'May 2020 - October 2020',
 	urls: [
 	  'https://www.medtronic.com/us-en/index.html'
 	]
@@ -32,10 +52,11 @@ export const USASECURITY = {
   name: 'USA Security Inc. (Contract)',
   title: 'Web Architect',
   location: 'Eden Prairie, MN',
-  years: 'October 2017 - Now',
+  years: 'October 2017 - Ongoing',
   urls: [
-    'https://github.com/Saccoon/usa-sec-react-okta',
-    'https://github.com/Saccoon/usa-sec-firebase'
+    'https://www.usasecurityinc.com/'
+    // 'https://github.com/Saccoon/usa-sec-react-okta',
+    // 'https://github.com/Saccoon/usa-sec-firebase'
   ]
 }
 
@@ -43,7 +64,7 @@ export const SANCTUARYFLOAT = {
   name: 'Sanctuary Float Spa (Contract)',
   title: 'Web Architect',
   location: 'Minnetonka, MN',
-  years: 'February 2018 - Now',
+  years: 'February 2018 - 2019',
   urls: [
     'https://www.sanctuaryfloatspa.com/',
     'https://www.sanctuaryfloatspa.store/'
@@ -70,15 +91,15 @@ export const AMANO = {
   ]
 }
 
-export const GOMAHI = {
-  name: 'Go Mahi (Contract)',
-  title: 'Web Architect',
-  location: 'Eden Prairie, MN',
-  years: 'January 2017 - Now',
-  urls: [
-    'http://www.gomahi.com/'
-  ]
-}
+// export const GOMAHI = {
+//   name: 'Go Mahi (Contract)',
+//   title: 'Web Architect',
+//   location: 'Eden Prairie, MN',
+//   years: 'January 2017 - 2018',
+//   urls: [
+//     'http://www.gomahi.com/'
+//   ]
+// }
 
 export const BCBSNC = {
   name: 'Blue Cross Blue Shield NC',
@@ -105,13 +126,13 @@ export const WORDSATWORK = {
   name: 'Words at Work (Contract)',
   title: 'Senior Web Developer',
   location: 'Minneapolis, MN',
-  years: 'March 2016 - Now',
+  years: 'March 2016 - 2018',
   urls: [
     'http://woodlandcabinetry.com/',
-    'https://github.com/Saccoon/codefleet-ryder-cup-es6-jquery',
-    'https://github.com/Saccoon/datacard-pki-calc-es5-jquery',
-    'https://github.com/Saccoon/datacard-conference-demo-es5-jquery',
-    'https://github.com/Saccoon/codefleet-conference-quiz-es5-jquery'
+    // 'https://github.com/Saccoon/codefleet-ryder-cup-es6-jquery',
+    // 'https://github.com/Saccoon/datacard-pki-calc-es5-jquery',
+    // 'https://github.com/Saccoon/datacard-conference-demo-es5-jquery',
+    // 'https://github.com/Saccoon/codefleet-conference-quiz-es5-jquery'
   ]
 }
 
@@ -119,7 +140,7 @@ export const DRG = {
   name: 'DRG Group (Contract)',
   title: 'Senior Web Developer',
   location: 'Minneapolis, MN',
-  years: 'February 2016 - Now',
+  years: 'February 2016 - 2019',
   urls: [
     'http://dr-group.com/'
   ]
@@ -204,7 +225,7 @@ export const BTSC = {
   name: 'Bemidji Trap Skeet Club (Contract)',
   title: 'Web Developer',
   location: 'Bemidji, MN',
-  years: 'February 2013 - Now',
+  years: 'February 2013 - Ongoing',
   urls: [
     'http://www.bemidji-trap-skeet.org/'
   ]
@@ -214,7 +235,7 @@ export const TSO = {
   name: 'Third Street Optical (Contract)',
   title: 'Web Developer',
   location: 'Bemidji, MN',
-  years: 'August 2012 - Now',
+  years: 'August 2012 - Ongoing',
   urls: [
     'http://www.thirdstreetoptical.info/'
   ]
