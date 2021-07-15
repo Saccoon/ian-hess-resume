@@ -54,7 +54,7 @@ class Footer extends Component {
 			<FooterContainer>
 				<Container>
 					<Flex>
-						<Link href="tel:218-556-6276" target='_top'>(612)772-5983 <FontAwesomeIcon icon={faPhone} /></Link>
+						<Link href="tel:612-772-5983" target='_top'>(612)772-5983 <FontAwesomeIcon icon={faPhone} /></Link>
 						<Link href="mailto:ian@noctemis.com" target="_top">ian@noctemis.com <FontAwesomeIcon icon={faEnvelope} /></Link>
 						<Print onClick={window.print}>Print <FontAwesomeIcon icon={faPrint} /></Print>
 						<Link href="http://www.ianhess.online">http://www.ianhess.online <FontAwesomeIcon icon={faGlobe} /></Link>
