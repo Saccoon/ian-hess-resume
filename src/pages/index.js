@@ -16,7 +16,7 @@ import { ProfileContainer,
 	SummaryItem,
 	Summary,
 	SummaryContent } from './Styles'
-import Container from '../components/container/Container'
+import {Container} from '../components/simple/container'
 import { LANGUAGES, FRAMEWORKS, DATABASES, TECHNOLOGIES } from '../constants/skills'
 import * as EXPERIENCE from '../constants/experience'
 import * as EDUCATION from '../constants/education'

@@ -1,52 +1,66 @@
-import React, {Fragment} from 'react'
+import { faAws, faDigitalOcean } from '@fortawesome/fontawesome-free-brands'
+import React, {Fragment, useState} from 'react'
+import { STEVENWORKOUT } from './data'
+import styled from 'styled-components'
+
+const Day = props => {
+    const [open, setOpen] = useState(false)
+
+    const Day = styled.article`
+        width: calc(100% - 20px);
+        border: 1px solid black;
+        padding: 10px;
+        &:nth-child(even) {
+            background: gray;
+        }
+        &:nth-child(odd) {
+            background: lightgray;
+        }
+        @media only screen and (min-width: 1600px) {
+            width: calc(20% - 20px);
+        }
+        cursor: pointer;
+    `
+    return(
+        <Day key={props.key} onClick={() => setOpen(!open)}>
+            <h2>{props.day} - Click to {open ? "close" : "open"}</h2>
+            {open && props.children}
+        </Day>
+    )
+}
 
 export const WorkoutPage = () => {
+
+    const Month = styled.section`
+        width: calc(100% - 2px);
+        display: block;
+        border: 1px solid black;
+        @media only screen and (min-width: 1600px) {
+            display: flex;
+            margin: 20px;
+            width: calc(100% - 42px);
+        }
+    `
+
+    const Exercise = styled.div`
+        padding-bottom: 20px;
+    `
+
     return (
         <Fragment>
-            <h1>Steven's Workout</h1>
-            <h2>Monday</h2>
-            <p>Squats - 90 second rest</p>
-            <ul>
-                <li>10 Squats</li>
-                <li>10 Squats</li>
-                <li>10 Squats</li>
-            </ul>
-            <p>Pull Ups - 60 second rest</p>
-            <ul>
-                <li>6 Pull ups</li>
-                <li>4 pull ups</li>
-                <li>2 pull ups</li>
-            </ul>
-            <p>Kettlebell Swings - 45 second rest</p>
-            <ul>
-                <li>10 swings</li>
-                <li>10 swings</li>
-                <li>10 swings</li>
-            </ul>
-            <p>Abs - 10 second rest</p>
-            <ul>
-                <li>25 sit ups</li>
-                <li>25 sit ups</li>
-                <li>25 sit ups</li>
-                <li>30 second planks</li>
-                <li>30 second planks</li>
-                <li>30 second planks</li>
-                <li>30 second leg raises</li>
-                <li>30 second leg raises</li>
-                <li>30 second leg raises</li>
-            </ul>
-            <p>Cardio - 15 second rest</p>
-            <ul>
-                <li>30 second sprint</li>
-                <li>30 second sprint</li>
-                <li>30 second sprint</li>
-            </ul>
-            <h2>Tuesday</h2>
-            <h2>Wednesday</h2>
-            <h2>Thursday</h2>
-            <h2>Friday</h2>
-            <h2>Saturday</h2>
-            <h2>Sunday</h2>
+            <h1>{STEVENWORKOUT.name}</h1>
+            <p>Notes - {STEVENWORKOUT.description}</p>
+            <Month>
+                {STEVENWORKOUT.calendar.map((day, key) => <Day day={day.day} key={`workout-${day.name}-${key}`}>
+                    {day.exercises.map((exercise, key) => <Exercise key={`exercise-${exercise.name}-${key}`}>
+                        <h3>{exercise.name}</h3>
+                        <p>{exercise.description}</p>
+                        <a href={exercise.link && exercise.link}>Learn Here</a>
+                        <p>Resting: {exercise.rest}</p>
+                        {exercise.sets.map((set, key) => <p key={`workout-set-${key}`}>{set}</p>)}
+                    </Exercise>)}
+                </Day>)}
+            </Month>
         </Fragment>
     )
 }

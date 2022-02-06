@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom'
 
 //components
-import Footer from '../components/footer/Footer'
+import Footer from '../components/simple/footer'
 
 //pages
 import { ProfilePage } from '../pages'

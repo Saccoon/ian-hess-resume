@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
-import Container from '../container/Container'
+import {Container} from '../container'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faPrint, faGlobe } from '@fortawesome/fontawesome-free-solid'
 import { faEnvelope } from '@fortawesome/fontawesome-free-regular'
 
-import * as Colors from '../../constants/colors'
+import * as Colors from '../../../constants/colors'
 
 
 class Footer extends Component {
